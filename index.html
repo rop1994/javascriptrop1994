@@ -30,7 +30,7 @@
             //Problema 2 Escribir un programa en el cual se ingresen cuatro números, calcular e informar 
             //la suma de los dos primeros y el producto del tercero y el cuarto.
 
-            var num1;
+            /*var num1;
             var num2;
             var num3;
             var num4;
@@ -49,12 +49,41 @@
             document.write('<br>');         
             document.write("El producto de los dos ultimos nuemros es");
             document.write(producto);
+            */
+
+            //Realizar un programa que lea por teclado dos números, si el primero es mayor 
+            //al segundo informar su suma y diferencia, en caso contrario informar el producto y 
+            //la división del primero respecto al segundo.
 
 
+            var num1;
+            var num2;
 
+            num1=prompt('Escribe el primer numero','');
+            num2=prompt('Escribe el segundo numero','');
 
+            if(num1 > num2){
+                var suma=parseInt(num1)+parseInt(num2);
+                var diferencia=parseInt(num1)-parseInt(num2);
+                document.write(suma);
+                document.write('<br>');  
+                document.write(diferencia);
+            }  else {
+                    
+                    var producto=parseInt(num1)*parseInt(num2);
+                    var división=parseInt(num1)/parseInt(num2);
 
+                    document.write(producto);
+                    document.write('<br>');  
+                    document.write(división);
+                    }
+            
+            
+
+            //document.write(num1);
+            //document.write('<br>');  
+            //document.write(num2);  
 
         </script>
     </body>
-</html>
+</html> 
